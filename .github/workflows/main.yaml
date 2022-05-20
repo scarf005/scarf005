@@ -33,17 +33,17 @@ jobs:
           plugin_achievements_threshold: C
 
           # Activity
-          plugin_activity: yes
-          plugin_activity_days: 14
-          plugin_activity_filter: all
-          plugin_activity_limit: 3
-          plugin_activity_load: 300
-          plugin_activity_visibility: public
-          plugin_activity_ignored: github-actions[bot]
+#           plugin_activity: yes
+#           plugin_activity_days: 14
+#           plugin_activity_filter: all
+#           plugin_activity_limit: 3
+#           plugin_activity_load: 300
+#           plugin_activity_visibility: public
+#           plugin_activity_ignored: github-actions[bot]
 
           # Code
-          plugin_code: yes
-          plugin_code_languages: python, c, c++, javascript, typescript
+#           plugin_code: yes
+#           plugin_code_languages: python, c, c++, javascript, typescript
 
           # Followup
           # plugin_followup: yes
@@ -60,20 +60,23 @@ jobs:
           plugin_introduction_title: yes
 
           # Languages
-          plugin_languages: yes
-          plugin_languages_analysis_timeout: 15
-          plugin_languages_categories: markup, programming
-          plugin_languages_colors: github
-          plugin_languages_limit: 8
-          plugin_languages_recent_categories: markup, programming
-          plugin_languages_recent_days: 14
-          plugin_languages_recent_load: 300
-          plugin_languages_sections: most-used
-          plugin_languages_threshold: 0%
-          plugin_languages_ignored: PLSQL, html, css, pug, nunjucks, shell
-          plugin_languages_skipped: dotfiles, scarfvim
-          commits_authoring: greenscarf005@gmail.com, 42.4.youkim@gmail.com, pig05.kim@gmail.com, youkim@knou.ac.kr
-
+#           plugin_languages: yes
+#           plugin_languages_analysis_timeout: 15
+#           plugin_languages_categories: markup, programming
+#           plugin_languages_colors: github
+#           plugin_languages_limit: 8
+#           plugin_languages_recent_categories: markup, programming
+#           plugin_languages_recent_days: 14
+#           plugin_languages_recent_load: 300
+#           plugin_languages_sections: most-used
+#           plugin_languages_threshold: 3%
+#           plugin_languages_ignored: PLSQL, html, css, pug, nunjucks, shell, HyPhy, Brainfuck
+#           plugin_languages_skipped: dotfiles, scarfvim
+#           commits_authoring: greenscarf005@gmail.com, 42.4.youkim@gmail.com, pig05.kim@gmail.com, youkim@knou.ac.kr
+          
+          # Traffic
+          plugin_traffic: yes
+          
           # Lines
           plugin_lines: yes
 
@@ -82,9 +85,6 @@ jobs:
           plugin_notable_from: organization
           plugin_notable_types: commit, pull_request, issue
           plugin_notable_indepth: true
-
-          # Traffic
-          plugin_traffic: yes
 
           # Wakatime
           plugin_wakatime: yes
