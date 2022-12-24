@@ -23,14 +23,17 @@ jobs:
           base: header, activity, community
 
           # IsoCalendar
-          plugin_isocalendar: yes
+          plugin_isocalendar: no
           #plugin_isocalendar_duration: full-year
 
           # Achievements
-          plugin_achievements: yes
+          plugin_achievements: no
           plugin_achievements_display: compact
           plugin_achievements_secrets: yes
           plugin_achievements_threshold: C
+
+          # Lines
+          plugin_lines: no
 
           # Introduction
           plugin_introduction: yes
@@ -38,9 +41,6 @@ jobs:
 
           # Traffic
           plugin_traffic: yes
-          
-          # Lines
-          plugin_lines: yes
 
           # Notable
           plugin_notable: yes
