@@ -36,22 +36,22 @@ jobs:
           plugin_lines: no
 
           # Introduction
-          plugin_introduction: yes
+          plugin_introduction: no
           plugin_introduction_title: yes
 
           # Traffic
-          plugin_traffic: yes
+          plugin_traffic: no
+
+          # Wakatime
+          plugin_wakatime: no
+          plugin_wakatime_days: 7
+          plugin_wakatime_limit: 5
+          plugin_wakatime_sections: os, editors, time, projects, languages #, projects-graphs, languages-graphs
+          plugin_wakatime_token: ${{ secrets.WAKATIME_API_KEY }}
+          plugin_wakatime_languages_other: no
 
           # Notable
           plugin_notable: yes
           plugin_notable_from: organization
           plugin_notable_indepth: yes
           plugin_notable_filter: stars:>5
-
-          # Wakatime
-          plugin_wakatime: yes
-          plugin_wakatime_days: 7
-          plugin_wakatime_limit: 5
-          plugin_wakatime_sections: time, projects, projects-graphs, languages, languages-graphs, editors, os
-          plugin_wakatime_token: ${{ secrets.WAKATIME_API_KEY }}
-          plugin_wakatime_languages_other: no
