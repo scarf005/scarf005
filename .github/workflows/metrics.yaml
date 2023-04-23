@@ -18,7 +18,7 @@ jobs:
           # Configs
           filename: profile_metrics.svg
           token: ${{ secrets.TOKEN }}
-          config_padding: 0, 50%
+          config_padding: 0, 60%
           config_timezone: Asia/Seoul
           template: classic
           base: header
