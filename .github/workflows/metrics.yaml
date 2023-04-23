@@ -1,14 +1,14 @@
 name: Metrics
 on:
-  schedule: [{cron: "0 16 * * *" }]
-  push: {branches: ["main"]}
+  schedule: [{ cron: "0 16 * * *" }]
+  push: { branches: [main] }
   workflow_dispatch:
 
 jobs:
   metrics:
     runs-on: ubuntu-latest
     steps:
-      - name: 🧣 create metrics
+      - name: create metrics
         uses: lowlighter/metrics@latest
         with:
           # Gist
@@ -18,6 +18,7 @@ jobs:
           # Configs
           filename: profile_metrics.svg
           token: ${{ secrets.TOKEN }}
+          config_padding: 0, 50%
           config_timezone: Asia/Seoul
           template: classic
           base: header
