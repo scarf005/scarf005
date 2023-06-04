@@ -28,3 +28,4 @@ jobs:
           plugin_notable_from: organization
           plugin_notable_indepth: yes
           plugin_notable_filter: stars:>5
+          plugin_notable_skipped: Cata-Rogall-Modpack
