@@ -13,7 +13,7 @@ jobs:
         with:
           # Gist
           output_action: gist
-          committer_gist: ${{ secrets.GIST }}
+          committer_gist: ${{ vars.GIST }}
 
           # Configs
           filename: profile_metrics.svg
