@@ -5,14 +5,6 @@ on:
   workflow_dispatch:
 
 jobs:
-  keepalive:
-    name: keep workflow alive
-    runs-on: ubuntu-latest
-    permissions:
-      actions: write
-    steps:
-      - uses: actions/checkout@v4
-      - uses: gautamkrishnar/keepalive-workflow@v2
   metrics:
     runs-on: ubuntu-latest
     steps:
